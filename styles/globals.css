@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base{
  body {
-    @apply bg-black text-white
+    @apply bg-black text-white;
+    
  }   
 
  h1 h2, h3, h4, h5, h6{
@@ -12,5 +14,16 @@
  }
  h1{
    @apply text-2xl sm:text-5xl md:text-6xl
+ }
+ h2{
+   @apply text-3xl sm:text-4xl
+ }
+
+ li{
+   @apply cursor-pointer
+ }
+
+ button{
+   @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-teal-600 to-teal-200 text-white
  }
 }
