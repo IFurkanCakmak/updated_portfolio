@@ -26,4 +26,15 @@
  button{
    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-teal-600 to-teal-200 text-white
  }
+
+ navbar {
+  @apply w-full text-[white] text-sm fixed z-[999] top-0;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
 }
+navbar.scrolled {
+  @apply bg-[color:var(--main-color)];
+}
+ 
+}
+
+
