@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'back':"url('/video.gif')",
+        
+      },
+    },
   },
   plugins: [],
 }
