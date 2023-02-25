@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.12",
+    "@heroicons/react": "^1.0.6",
     "@next/font": "13.1.6",
     "@tawk.to/tawk-messenger-react": "^2.0.1",
     "eslint": "8.34.0",
@@ -22,7 +24,9 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
+    "file-loader": "^6.2.0",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6"
+    "tailwindcss": "^3.2.6",
+    "webpack": "^5.75.0"
   }
 }
