@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
-import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
-import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {FaBlog, FaGithub, FaLinkedinIn} from 'react-icons/fa'
+import { Menu, Transition } from '@headlessui/react';
+
+
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -14,33 +17,90 @@ const Navbar = () => {
     };
   }
   
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ');
+  }
+  
 
-  const [nav, setNav] =useState(false)
+  const [nav, setNav] = useState(false)
   const handleNav =() =>{
     setNav(!nav)
 
   }
 
   return (
-    <div className={isScrolled ? "fixed w-full h-20 bg-black shadow-lg shadow-gray-800 z-[100]" : " navbar scrolled"}>
+    <div className={isScrolled ? "fixed w-full h-20 bg-black shadow-md shadow-gray-800 z-[100]" : "navbar scrolled"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image src="/logo.png" href="/" alt="logo" width="150" height="75" className="cursor-pointer"/>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-md hover:border-b">Home</li>
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Home</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-md hover:border-b">Home</li>
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">About</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-md hover:border-b">Home</li>
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Projects</li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-md hover:border-b">Home</li>
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">
+              <Menu as='div' className='relative inline-block text-left'>
+              <Menu.Button className="normal-case shadow-none hover:text-teal-200">
+              Resources             
+                </Menu.Button>
+            <Transition
+              as={Fragment}
+              enter='transition ease-out duration-100'
+              enterFrom='transform opacity-0 scale-95'
+              enterTo='transform opacity-100 scale-100'
+              leave='transition ease-in duration-100'
+              leaveFrom='transform opacity-100 scale-100'
+              leaveTo='transform opacity-0 scale-95'
+            >
+              <Menu.Items className='origin-top-left absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none'>
+                <div className='py-1'>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        Articles
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        Repositories
+                      </a>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu>
+              </li>
             </Link>
             <Link href="/">
-              <li className="ml-10 text-md hover:border-b">Home</li>
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Resume</li>
+            </Link>
+            <Link href="/">
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Contact</li>
             </Link>
           </ul>
           <div onClick={handleNav} className="md:hidden">
@@ -61,33 +121,33 @@ const Navbar = () => {
         <AiOutlineClose/>
       </div>
       </div>
-      <div className="border-b border-gray-700 my-6 -ml-1">
-        <p className="w-[85%] py-3">Izzet Furkan Cakmak</p>
+      <div className="border-b border-gray-700 my-6 -ml-2">
+        <p className="w-[95%] py-3 ml-1">Izzet Furkan Cakmak</p>
       </div>
     </div>
     <div className="py-2 flex flex-col">
-      <ul className="mt-1">
+      <ul className="-mt-4">
         <Link href="/">
           <li className="py-2 text-md my-4">Home</li>
         </Link>
         <Link href="/">
-          <li className="py-2 text-md my-4">Home</li>
+          <li className="py-2 text-md my-4">About</li>
         </Link>
         <Link href="/">
-          <li className="py-2 text-md my-4">Home</li>
+          <li className="py-2 text-md my-4">Projects</li>
         </Link>
         <Link href="/">
-          <li className="py-2 text-md my-4">Home</li>
+          <li className="py-2 text-md my-4">Resources</li>
         </Link>
         <Link href="/">
-          <li className="py-2 text-md my-4">Home</li>
+          <li className="py-2 text-md my-4">Resume</li>
         </Link>
         <Link href="/">
-          <li className="py-2 text-md">Home</li>
+          <li className="py-2 text-md">Contact</li>
         </Link>
       </ul>
-      <div className="pt-28 -ml-1">
-      <p className="uppercase tracking-widest text-teal-600 font-semibold">CONNECT BY</p>
+      <div className="pt-10 -ml-1">
+      <p className="uppercase tracking-widest text-teal-600 font-semibold -mt-1">CONNECT BY</p>
       <div className="flex items-center justify-between -ml-2 my-4 w-full sm:w-[80%]">
       <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
       <FaLinkedinIn/>
@@ -99,7 +159,7 @@ const Navbar = () => {
       <AiOutlineMail/>
       </div>
       <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-      <BsFillPersonLinesFill/>
+      <FaBlog/>
       </div>
       
       </div>
