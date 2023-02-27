@@ -2,7 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Main from '@/components/Main'
-
+import About from '@/components/About'
+import Stack from '@/components/Stack'
 
 const Home = () => {
   return (
@@ -13,7 +14,9 @@ const Home = () => {
       <link rel="icon" href="/canonical.png" />
     </Head>
     <Navbar/>
-    <Main/>  
+    <Main/>
+    <About/>
+    <Stack/>
     </div>
     
     
