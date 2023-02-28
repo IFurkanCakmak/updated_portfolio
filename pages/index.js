@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Main from '@/components/Main'
 import About from '@/components/About'
 import Stack from '@/components/Stack'
+import Skills from '@/components/Skills'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
     <Main/>
     <About/>
     <Stack/>
+    <Skills/>
     </div>
     
     
