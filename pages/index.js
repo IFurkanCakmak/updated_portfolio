@@ -5,6 +5,7 @@ import Main from '@/components/Main'
 import About from '@/components/About'
 import Stack from '@/components/Stack'
 import Skills from '@/components/Skills'
+import Projects from '@/components/Projects'
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
     <About/>
     <Stack/>
     <Skills/>
+    <Projects/>
     </div>
     
     
