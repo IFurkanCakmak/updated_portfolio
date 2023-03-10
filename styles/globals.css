@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+html{
+  scroll-behavior: smooth!important;
+}
+
 @layer base{
  body {
     @apply bg-back bg-no-repeat bg-cover bg-center bg-fixed text-white;
