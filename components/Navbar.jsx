@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from "react";
+import React, { useState, Fragment, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
@@ -22,25 +22,32 @@ const Navbar = () => {
   }
   
 
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
   const handleNav =() =>{
     setNav(!nav)
 
-  }
+  };
+
+ 
 
   return (
     <div className={isScrolled ? "fixed w-full h-20 bg-black shadow-md shadow-gray-800 z-[100]" : "navbar scrolled"}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/logo.png" href="/" alt="logo" width="150" height="75" className="cursor-pointer"/>
+        <Link href="/">
+        <Image src="/logo.png"  alt="logo" width="150" height="75" className="cursor-pointer"/>
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/#stack">
+              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Stack</li>
+            </Link>
+            <Link href="/#projects">
               <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Projects</li>
             </Link>
             <Link href="/">
@@ -96,10 +103,7 @@ const Navbar = () => {
           </Menu>
               </li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Resume</li>
-            </Link>
-            <Link href="/">
+            <Link href="/#contact">
               <li className="ml-10 text-md font-semibold hover:border-b hover:text-teal-200">Contact</li>
             </Link>
           </ul>
@@ -130,19 +134,19 @@ const Navbar = () => {
         <Link href="/">
           <li className="py-2 text-md my-4">Home</li>
         </Link>
-        <Link href="/">
+        <Link href="/#about">
           <li className="py-2 text-md my-4">About</li>
         </Link>
-        <Link href="/">
+        <Link href="/#stack">
+          <li className="py-2 text-md my-4">Stack</li>
+        </Link>
+        <Link href="/#projects">
           <li className="py-2 text-md my-4">Projects</li>
         </Link>
         <Link href="/">
           <li className="py-2 text-md my-4">Resources</li>
         </Link>
-        <Link href="/">
-          <li className="py-2 text-md my-4">Resume</li>
-        </Link>
-        <Link href="/">
+        <Link href="/#contact">
           <li className="py-2 text-md">Contact</li>
         </Link>
       </ul>
