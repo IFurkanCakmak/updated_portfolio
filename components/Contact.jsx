@@ -6,8 +6,21 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaBlog } from "react-icons/fa";
 import Link from "next/link";
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import { useRef } from "react";
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const formRef=useRef()
+  const handleSubmit= (e) =>{
+    e.preventDefault();
+    emailjs.sendForm('service_nvgp9cc', 'template_0aenf0i', formRef.current, 'tdb-c_eJv6rtKCqn4')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+  }
+
   return (
     <div id="contact" className="w-full backdrop-blur-md bg-black/80">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -63,40 +76,44 @@ const Contact = () => {
           {/* rightside */}
           <div className="col-span-3 w-full h-auto shadow-lg shadow-gray-800 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="text"
+                      name="user_name"
                     />
                   </div>
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Phone</label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="text"
+                      name="user_phone"
                     />
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
                 <label className="uppercase text-sm py-2">Email</label>
                 <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="email"
+                      name="user_email"
                     />
                 </div>
                 <div className="flex flex-col py-2">
                 <label className="uppercase text-sm py-2">Subject</label>
                 <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
                       type="text"
+                      name="user_subject"
                     />
                 </div>
                 <div className="flex flex-col py-2">
                 <label className="uppercase text-sm py-2">Message</label>
-                <textarea className="border-2 rounded-lg p-3 border-gray-300" rows="10"></textarea>
+                <textarea className="border-2 rounded-lg p-3 border-gray-300 text-black" rows="10" name="message"></textarea>
                 </div>
                 <button className="w-full p-4 mt-4 text-gray-100 shadow-lg">Send Message</button>
               </form>
@@ -116,3 +133,6 @@ const Contact = () => {
 };
 
 export default Contact;
+
+
+/* TODO  ADD REACT TOASTIFY AFTER SEND CONTACT MESSAGE*/
