@@ -132,22 +132,71 @@ const Navbar = () => {
     <div className="py-2 flex flex-col">
       <ul className="-mt-4">
         <Link href="/">
-          <li className="py-2 text-md my-4">Home</li>
+          <li onClick={() => setNav(false)} className="py-2 text-md my-4">Home</li>
         </Link>
         <Link href="/#about">
-          <li className="py-2 text-md my-4">About</li>
+          <li onClick={() => setNav(false)} className="py-2 text-md my-4">About</li>
         </Link>
         <Link href="/#stack">
-          <li className="py-2 text-md my-4">Stack</li>
+          <li onClick={() => setNav(false)} className="py-2 text-md my-4">Stack</li>
         </Link>
         <Link href="/#projects">
-          <li className="py-2 text-md my-4">Projects</li>
+          <li onClick={() => setNav(false)} className="py-2 text-md my-4">Projects</li>
         </Link>
         <Link href="/">
-          <li className="py-2 text-md my-4">Resources</li>
+          <li className="py-2 text-md my-4">
+          <Menu as='div' className='relative inline-block text-left'>
+              <Menu.Button className="normal-case shadow-none hover:text-teal-200">
+              Resources             
+                </Menu.Button>
+            <Transition
+              as={Fragment}
+              enter='transition ease-out duration-100'
+              enterFrom='transform opacity-0 scale-95'
+              enterTo='transform opacity-100 scale-100'
+              leave='transition ease-in duration-100'
+              leaveFrom='transform opacity-100 scale-100'
+              leaveTo='transform opacity-0 scale-95'
+            >
+              <Menu.Items className='origin-top-left absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white divide-y divide-gray-100 focus:outline-none'>
+                <div className='py-1'>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        Articles
+                      </a>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <a
+                        href='#'
+                        className={classNames(
+                          active
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'text-gray-700',
+                          'block px-4 py-2 text-sm'
+                        )}
+                      >
+                        Repositories
+                      </a>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu></li>
         </Link>
         <Link href="/#contact">
-          <li className="py-2 text-md">Contact</li>
+          <li onClick={() => setNav(false)} className="py-2 text-md">Contact</li>
         </Link>
       </ul>
       <div className="pt-10 -ml-1">
@@ -156,9 +205,15 @@ const Navbar = () => {
       <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
       <FaLinkedinIn/>
       </div>
+      <a
+                  href='https://github.com/IFurkanCakmak'
+                  target='_blank'
+                  rel='noreferrer'
+                >
       <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
       <FaGithub/>
       </div>
+      </a>
       <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
       <AiOutlineMail/>
       </div>
