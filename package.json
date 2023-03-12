@@ -9,12 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@headlessui/react": "^1.7.12",
     "@heroicons/react": "^1.0.6",
     "@next/font": "13.1.6",
     "@tawk.to/tawk-messenger-react": "^2.0.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "framer-motion": "^10.2.4",
     "next": "13.1.6",
     "node-sass": "^8.0.0",
     "react": "18.2.0",
