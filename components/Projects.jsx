@@ -1,5 +1,5 @@
 import React from "react";
-import estatetImg from "../public/projects/realestate.PNG";
+import estateImg from "../public/projects/realestate.PNG";
 import SingleProject from "./SingleProject";
 
 const Projects = () => {
@@ -11,25 +11,25 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
          <SingleProject 
          title='Real Estate Searcher'
-         backgroundImg={estatetImg}
+         backgroundImg={estateImg}
          projectUrl='/estate'
          description='Next JS'
          />
          <SingleProject 
          title='Real Estate Searcher'
-         backgroundImg={estatetImg}
+         backgroundImg={estateImg}
          projectUrl='/estate'
          description='Next JS'
          />
          <SingleProject 
          title='Real Estate Searcher'
-         backgroundImg={estatetImg}
+         backgroundImg={estateImg}
          projectUrl='/estate'
          description='Next JS'
          />
          <SingleProject 
          title='Real Estate Searcher'
-         backgroundImg={estatetImg}
+         backgroundImg={estateImg}
          projectUrl='/estate'
          description='Next JS'
          />
