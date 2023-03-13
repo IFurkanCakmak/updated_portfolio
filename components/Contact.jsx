@@ -5,21 +5,43 @@ import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaBlog } from "react-icons/fa";
 import Link from "next/link";
-import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useRef } from "react";
-import emailjs from '@emailjs/browser'
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const formRef=useRef()
-  const handleSubmit= (e) =>{
+  const formRef = useRef();
+  const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_nvgp9cc', 'template_0aenf0i', formRef.current, 'tdb-c_eJv6rtKCqn4')
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
+    emailjs
+      .sendForm(
+        "service_nvgp9cc",
+        "template_0aenf0i",
+        formRef.current,
+        "tdb-c_eJv6rtKCqn4"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+  const notify = () =>
+    toast.success("Your message sent successfully.", {
+      position: "bottom-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
     });
-  }
 
   return (
     <div id="contact" className="w-full backdrop-blur-md bg-black/80">
@@ -96,36 +118,45 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex flex-col py-2">
-                <label className="uppercase text-sm py-2">Email</label>
-                <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
-                      type="email"
-                      name="user_email"
-                    />
+                  <label className="uppercase text-sm py-2">Email</label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
+                    type="email"
+                    name="user_email"
+                  />
                 </div>
                 <div className="flex flex-col py-2">
-                <label className="uppercase text-sm py-2">Subject</label>
-                <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
-                      type="text"
-                      name="user_subject"
-                    />
+                  <label className="uppercase text-sm py-2">Subject</label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex border-gray-300 text-black"
+                    type="text"
+                    name="user_subject"
+                  />
                 </div>
                 <div className="flex flex-col py-2">
-                <label className="uppercase text-sm py-2">Message</label>
-                <textarea className="border-2 rounded-lg p-3 border-gray-300 text-black" rows="10" name="message"></textarea>
+                  <label className="uppercase text-sm py-2">Message</label>
+                  <textarea
+                    className="border-2 rounded-lg p-3 border-gray-300 text-black"
+                    rows="10"
+                    name="message"
+                  ></textarea>
                 </div>
-                <button className="w-full p-4 mt-4 text-gray-100 shadow-lg">Send Message</button>
+                <button
+                onClick={notify}
+                  className="w-full p-4 mt-4 text-gray-100 shadow-lg"
+                >
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
         </div>
         <div className="flex justify-center py-12">
-            <Link href="/">
-                <div className="rounded-full shadow-lg shadow-gray-600 cursor-pointer hover:scale-110 ease-in-duration-300">
-                    <HiOutlineChevronDoubleUp className="text-teal-600" size={40}/>
-                </div>
-            </Link>
+          <Link href="/">
+            <div className="rounded-full shadow-lg shadow-gray-600 cursor-pointer hover:scale-110 ease-in-duration-300">
+              <HiOutlineChevronDoubleUp className="text-teal-600" size={40} />
+            </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -135,4 +166,3 @@ const Contact = () => {
 export default Contact;
 
 
-/* TODO  ADD REACT TOASTIFY AFTER SEND CONTACT MESSAGE*/
