@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import Reactjs from "/public/reactpng.png";
-import Nextjs from "/public/nextjs.png";
-import Javascript from "/public/javascript.png";
-import nodejs from "/public/nodejs.png";
-import Mongodb from "/public/mongodb.png";
+import Reactjs from "/public/stack/reactpng.png";
+import Nextjs from "/public/stack/nextjs.png";
+import Javascript from "/public/stack/javascript.png";
+import nodejs from "/public/stack/nodejs.png";
+import Mongodb from "/public/stack/mongodb.png";
 import { motion } from "framer-motion";
 
 const Stack = () => {
