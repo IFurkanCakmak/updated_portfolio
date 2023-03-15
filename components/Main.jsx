@@ -7,7 +7,7 @@
       <div id='main' className="w-full h-screen text-center">
         <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
           <div>
-            <p className="uppercase text-sm tracking-widest text-gray-600 ">
+            <p className="uppercase text-sm tracking-widest text-gray-600 mt-40">
               EAT <span className="text-teal-400">BUILD</span> SLEEP
             </p>
             <h1 className='py-4 sm:text-md text-white font-semibold'>
