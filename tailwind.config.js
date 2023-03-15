@@ -12,7 +12,6 @@ module.exports = {
     extend: {
       backgroundImage:{
         'back':"url('/video.gif')",
-        
       },
     },
   },
