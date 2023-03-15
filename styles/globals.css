@@ -32,9 +32,17 @@ html{
  }
 
 .navbar.scrolled {
-  @apply bg-[color:var(--main-color)];
+  @apply bg-[black];
   width: 100%;
   height: 5rem;
+  position: fixed;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow-color: #1f2937;
+    --tw-shadow: var(--tw-shadow-colored);
+    z-index: 100;
+  
 }
 @media screen and (max-width: 480px) {
   .navbar.scrolled{
