@@ -8,7 +8,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "@/components/Navbar";
+
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
         <title>Izzet Furkan Cakmak - Personal Portfolio</title>
         <link rel="icon" href="/canonical.png" />
       </Head>
-      <Navbar/>
+      
       <Main />
       <About />
       <Stack />
