@@ -6,9 +6,9 @@ import Stack from "@/components/Stack";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 
 const Home = () => {
   return (
@@ -17,13 +17,13 @@ const Home = () => {
         <title>Izzet Furkan Cakmak - Personal Portfolio</title>
         <link rel="icon" href="/canonical.png" />
       </Head>
-      
       <Main />
       <About />
       <Stack />
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
       <ToastContainer
         position="bottom-center"
         autoClose={5000}
