@@ -4,8 +4,6 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaBlog } from "react-icons/fa";
-import Link from "next/link";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -44,7 +42,7 @@ const Contact = () => {
     });
 
   return (
-    <div id="contact" className="w-full backdrop-blur-md bg-black/80">
+    <div id="contact" className="w-full backdrop-blur-lg bg-black/90">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-2xl text-teal-400 tracking-widest mt-14">Contact</p>
         <p className="py-2 text-3xl lg:text-4xl">Get in touch with me</p>
@@ -150,13 +148,6 @@ const Contact = () => {
               </form>
             </div>
           </div>
-        </div>
-        <div className="flex justify-center py-12">
-          <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-600 cursor-pointer hover:scale-110 ease-in-duration-300">
-              <HiOutlineChevronDoubleUp className="text-teal-600" size={40} />
-            </div>
-          </Link>
         </div>
       </div>
     </div>
