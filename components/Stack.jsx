@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 const Stack = () => {
   return (
-    <div id="stack" className="w-full md:h-screen p-2 items-center py-16 backdrop-blur-md bg-black/80">
+    <div id="stack" className="w-full md:h-screen p-2 items-center py-16 backdrop-blur-lg bg-black/90">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 mt-20 gap-8">
         <div className="col-span-2">
           <p className="text-2xl text-teal-400 tracking-widest">About</p>
@@ -41,7 +41,7 @@ const Stack = () => {
         <div>
           <div className="w-right">
           <motion.div
-          initial={{ rotate: 45 }}
+          initial={{ rotate: 15 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-40px" }}
           transition={{ duration: 3.5, type: "spring" }}
