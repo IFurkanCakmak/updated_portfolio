@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h:screen p-2 backdrop-blur-md bg-black/80">
+    <div id="skills" className="w-full lg:h:screen p-2 backdrop-blur-lg bg-black/90">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className='text-2xl text-teal-400 tracking-widest'>Skills</p>
         <p className="py-4 text-md lg:text-4xl">These are other techs i can manage to contribute at a certain level</p>
