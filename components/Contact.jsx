@@ -77,18 +77,38 @@ const Contact = () => {
               <div>
                 <p className="uppercase pt-8">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
+                  <a
+                    href="https://www.linkedin.com/in/izzet-furkan-%C3%A7akmak-294037200/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
                   <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
-                  <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <FaBlog />
-                  </div>
+                  </a>
+                  <a
+                    href="https://github.com/IFurkanCakmak"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </a>
+                  <a href="mailto:furkan.cakmak@yandex.com">
+                    <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </a>
+                  <a
+                    href="https://izzetfurkancakmak.xyz"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-700 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                      <FaBlog />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -140,7 +160,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button
-                onClick={notify}
+                  onClick={notify}
                   className="w-full p-4 mt-4 text-gray-100 shadow-lg"
                 >
                   Send Message
@@ -155,5 +175,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
