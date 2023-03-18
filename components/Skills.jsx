@@ -6,7 +6,7 @@ const Skills = () => {
     <div id="skills" className="w-full lg:h:screen p-2 backdrop-blur-lg bg-black/90">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className='text-2xl text-teal-400 tracking-widest'>Skills</p>
-        <p className="py-4 text-md lg:text-4xl">These are other techs i can manage to contribute at a certain level</p>
+        <p className="py-4 text-lg lg:text-4xl">These are other techs i can manage to contribute at a certain level</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         
           <div className="p-6 mt-5 bg-black shadow-lg shadow-gray-800 rounded-xl hover:scale-105 ease-in duration-300">

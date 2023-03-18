@@ -16,19 +16,40 @@
             <h2 className='py-2 text-white text-xl font-semibold'>
               Izzet Furkan <span className="text-teal-200">Cakmak</span>
             </h2>
-            <div className='flex items-center justify-between max-w-[250px] m-auto py-4 lg:max-w-[300px] mb-40'> 
+            <div className='flex items-center justify-between max-w-[250px] m-auto py-4 lg:max-w-[300px] mb-40'>
+            <a
+                  href='https://www.linkedin.com/in/izzet-furkan-%C3%A7akmak-294037200/'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
             <div className='rounded-full bg-black shadow-lg shadow-gray-700 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
             <FaLinkedinIn/>
             </div>
+            </a> 
+            <a href="mailto:furkan.cakmak@yandex.com">
             <div className='rounded-full bg-black shadow-lg shadow-gray-700 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
             <AiOutlineMail/>
             </div>
+            </a>
+            <a
+                  href='https://github.com/IFurkanCakmak'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
             <div className='rounded-full bg-black shadow-lg shadow-gray-700 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
             <FaGithub/>
             </div>
+            </a>
+
+            <a
+                  href='https://izzetfurkancakmak.xyz'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
             <div className='rounded-full bg-black shadow-lg shadow-gray-700 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
             <FaBlog/>
             </div>
+            </a>
             </div>
           </div>
         </div>

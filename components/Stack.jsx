@@ -9,59 +9,57 @@ import { motion } from "framer-motion";
 
 const Stack = () => {
   return (
-    <div id="stack" className="w-full md:h-screen p-2 items-center py-16 backdrop-blur-lg bg-black/90">
+    <div
+      id="stack"
+      className="w-full md:h-screen p-2 items-center py-16 backdrop-blur-lg bg-black/90"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 mt-20 gap-8">
         <div className="col-span-2">
-          <p className="text-2xl text-teal-400 tracking-widest">About</p>
-          <p className="py-2 text-4xl">Who I am</p>
-          <p className="py-1 text-gray-400">
-            I am developer with engineering principles
-          </p>
+          <p className="text-2xl text-teal-400 tracking-widest">Techstack</p>
+          <p className="py-2 text-4xl">What I do</p>
+          <p className="py-1 text-gray-400">Favourite workspace</p>
           <p className="py-2">
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+            Throughout my bachelor education, i have learnt so many technologies
+            and worked in varius fields such as backend, fronted and web
+            development, designing, data structures, algorithms, network
+            security, computer networks and the other software and hardware
+            technologies. About all of these i can say i have basic knowledge on
+            each one of them but of course in some i have gone further and got
+            myself in more complicated situations. Here they are.
           </p>
           <p className="py-2 mb-6">
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+            I improve myself on building and development of fullstack web
+            applications by using Next, React, Node and Javascript. Working best
+            practices which are very important topics and methods like fetch
+            data from an API, creating an API, CRUD operations, state
+            management, database connection, Git, hooks, SSR and etc. This is my
+            favourite techstack when building a fullstack web application.
           </p>
         </div>
         <div>
           <div className="w-right">
-          <motion.div
-          initial={{ rotate: 15 }}
-          whileInView={{ rotate: 0 }}
-          viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
-          className="w-mainCircle"
-        >
-            <div className="w-secCircle">
-              <Image src={Reactjs} alt="" />
-            </div>
-            <div className="w-secCircle">
-              <Image className="rounded-lg" src={Nextjs} alt="" />
-            </div>
-            <div className="w-secCircle">
-              <Image src={Javascript} alt="" />
-            </div>{" "}
-            <div className="w-secCircle">
-              <Image src={nodejs} alt="" />
-            </div>
-            <div className="w-secCircle">
-              <Image src={Mongodb} alt="" />
-            </div>
+            <motion.div
+              initial={{ rotate: 15 }}
+              whileInView={{ rotate: 0 }}
+              viewport={{ margin: "-40px" }}
+              transition={{ duration: 3.5, type: "spring" }}
+              className="w-mainCircle"
+            >
+              <div className="w-secCircle">
+                <Image src={Reactjs} alt="" />
+              </div>
+              <div className="w-secCircle">
+                <Image className="rounded-lg" src={Nextjs} alt="" />
+              </div>
+              <div className="w-secCircle">
+                <Image src={Javascript} alt="" />
+              </div>{" "}
+              <div className="w-secCircle">
+                <Image src={nodejs} alt="" />
+              </div>
+              <div className="w-secCircle">
+                <Image src={Mongodb} alt="" />
+              </div>
             </motion.div>
             {/* background Circles */}
             <div className="w-backCircle tealCircle"></div>

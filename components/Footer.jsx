@@ -1,8 +1,6 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -17,73 +15,71 @@ const Footer = () => {
             <Image
               src="/logo.png"
               alt="logo"
-              width="150"
-              height="75"
-              className="cursor-pointer pb-6"
+              width="200"
+              height="100"
+              className="cursor-pointer pb-6 -ml-6"
             />
           </Link>
           <div className="flex gap-6 pb-5">
-            <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" />
-            <FaTwitter className="text-2xl cursor-pointer hover:text-blue-400" />
-            <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-800" />
-            <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" />
+            <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-800" href='https://www.linkedin.com/in/izzet-furkan-%C3%A7akmak-294037200/' target="_blank" rel="noreferrer noopener" />
+            <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" href="https://www.instagram.com/furkancakmak13/" target="_blank" rel="noreferrer noopener" />
           </div>
         </ul>
       </div>
       <div className="p-5">
         <ul>
-          <p className="text-teal-500 font-bold text-2xl pb-4">Product</p>
+          <p className="text-teal-500 font-bold text-2xl pb-4">Education</p>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Stocks
+            Math
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Futures & Options
+            Algorithm
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Mutual Funds
+            Data Science
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Fixed deposits
-          </li>
-        </ul>
-      </div>
-      <div className="p-5">
-        <ul>
-          <p className="text-teal-500 font-bold text-2xl pb-4">Company</p>
-          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            About
-          </li>
-          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Products
-          </li>
-          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Pricing
-          </li>
-          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Careers
-          </li>
-          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Press & Media
+            Security
           </li>
         </ul>
       </div>
       <div className="p-5">
         <ul>
-          <p className="text-teal-500 font-bold text-2xl pb-4">Support</p>
+          <p className="text-teal-500 font-bold text-2xl pb-4">Development</p>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Contact
+            Web
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Support Portals
+            Machine Learning
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            List Of Charges
+            Software
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Downloads & Resources
+            Hardware
           </li>
           <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
-            Videos
+            Design
+          </li>
+        </ul>
+      </div>
+      <div className="p-5">
+        <ul>
+          <p className="text-teal-500 font-bold text-2xl pb-4">Engineering</p>
+          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
+            Analyze
+          </li>
+          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
+            Perceptible Information
+          </li>
+          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
+            Flexibility
+          </li>
+          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
+            Process
+          </li>
+          <li className="text-gray-200 text-md pb-2 font-semibold hover:text-teal-600 cursor-pointer">
+            Availability
           </li>
       
         </ul>
@@ -101,3 +97,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+/* TODO add footer links pages */
+
+
