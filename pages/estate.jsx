@@ -7,7 +7,7 @@ import Head from "next/head";
 const estate = () => {
   return (
     
-    <div className="w-full lg:h-screen md:h-screen bg-black/90 backdrop-blur-lg">
+    <div className="w-full sm:h-screen xl:h-screen 2xl:h-screen lg:h-screen md:h-screen bg-black/90 backdrop-blur-lg">
       <Head>
         <title>Projects - Real Estate Web App</title>
         <link rel="icon" href="/canonical.png" />
