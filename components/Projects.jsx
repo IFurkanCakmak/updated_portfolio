@@ -1,6 +1,6 @@
 import React from "react";
-import estateImg from "../public/projects/realestate.PNG";
-import mernappImg from "../public/projects/mernapp.PNG"
+import estateImg from "../public/projects/realestate.png";
+import mernappImg from "../public/projects/mernapp.png"
 import SingleProject from "./SingleProject";
 
 const Projects = () => {
