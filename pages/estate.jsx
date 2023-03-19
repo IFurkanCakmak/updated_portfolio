@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import estateImg from "../public/projects/realestate.PNG";
+import estateImg from "../public/projects/realestate.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Head from "next/head";
 

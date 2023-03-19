@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import mernappImg from "../public/projects/mernapp.PNG";
+import mernappImg from "../public/projects/mernapp.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Head from "next/head";
 
