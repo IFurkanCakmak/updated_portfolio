@@ -19,7 +19,7 @@ const Stack = () => {
           <p className="py-2 text-4xl">What I do</p>
           <p className="py-1 text-gray-400">Favourite workspace</p>
           <p className="py-2">
-            Throughout my bachelor education, i have learnt so many technologies
+            Throughout my undergraduate study, i have learnt so many technologies
             and worked in varius fields such as backend, fronted and web
             development, designing, data structures, algorithms, network
             security, computer networks and the other software and hardware
