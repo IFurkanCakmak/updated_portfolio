@@ -1,6 +1,4 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
@@ -21,8 +19,7 @@ const Footer = () => {
             />
           </Link>
           <div className="flex gap-6 pb-5">
-            <FaLinkedin className="text-2xl cursor-pointer hover:text-blue-800" href='https://www.linkedin.com/in/izzet-furkan-%C3%A7akmak-294037200/' target="_blank" rel="noreferrer noopener" />
-            <FaInstagram className="text-2xl cursor-pointer hover:text-pink-600" href="https://www.instagram.com/furkancakmak13/" target="_blank" rel="noreferrer noopener" />
+    <p className="text-md lg:text-lg -mt-2">Based in Istanbul , Turkey</p>
           </div>
         </ul>
       </div>
