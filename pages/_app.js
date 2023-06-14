@@ -21,7 +21,6 @@ export default function App({ Component, pageProps }) {
       <TawkMessengerReact
                 propertyId="63f1c0224247f20fefe16000"
                 widgetId="1gpk5d29r"/>
-               
       <Footer/>
     </>
   )
