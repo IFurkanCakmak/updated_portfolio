@@ -1,6 +1,7 @@
 import React from "react";
 import estateImg from "../public/projects/realestate.jpg";
 import mernappImg from "../public/projects/mernapp.jpg"
+import restapiImg from "../public/projects/restapi.png"
 import SingleProject from "./SingleProject";
 
 const Projects = () => {
@@ -21,6 +22,12 @@ const Projects = () => {
          backgroundImg={mernappImg}
          projectUrl='/mernapp'
          description='React'
+         />
+         <SingleProject 
+         title='Freelancer App (Undergraduate Thesis)'
+         backgroundImg={restapiImg}
+         projectUrl='/restapi'
+         description='REST API'
          />
         </div>
         </div>
