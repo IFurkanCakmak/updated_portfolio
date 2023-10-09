@@ -15,19 +15,25 @@ const Stack = () => {
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 mt-20 gap-8">
         <div className="col-span-2">
-          <p className="text-2xl text-teal-400 tracking-widest">Techstack</p>
-          <p className="py-2 text-4xl">What I do</p>
-          <p className="py-1 text-gray-400">Favourite workspace</p>
-          <p className="py-2">
-            Throughout my undergraduate study, i have learnt so many technologies
-            and worked in varius fields such as backend, fronted and web
-            development, designing, data structures, algorithms, network
+          <p className="text-2xl text-teal-400 tracking-widest p-8 sm:p-0 md:p-0 lg:p-0 xl:p-0">
+            Techstack
+          </p>
+          <p className=" sm:py-2 md:py-2 lg:py-2 xl:py-2 px-8 sm:p-0 md:p-0 lg:p-0 xl:p-0 text-4xl">
+            What I do
+          </p>
+          <p className="sm:py-1 md:py-1 lg:py-1 xl:py-1 px-8 sm:p-0 md:p-0 lg:p-0 xl:p-0 text-gray-400">
+            Favourite workspace
+          </p>
+          <p className=" sm:py-2 md:py-2 lg:py-2 xl:py-2 p-8 sm:p-0 md:p-0 lg:p-0 xl:p-0">
+            Throughout my undergraduate study, i have learnt so many
+            technologies and worked in varius fields such as backend, fronted
+            and web development, designing, data structures, algorithms, network
             security, computer networks and the other software and hardware
             technologies. About all of these i can say i have basic knowledge on
             each one of them but of course in some i have gone further and got
             myself in more complicated situations. Here they are.
           </p>
-          <p className="py-2 mb-6">
+          <p className="sm:py-2 md:py-2 lg:py-2 xl:py-2 p-8 sm:p-0 md:p-0 lg:p-0 xl:p-0 mb-6">
             I improve myself on building and development of fullstack web
             applications by using Next, React, Node and Javascript. Working best
             practices which are very important topics and methods like fetch
