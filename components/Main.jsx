@@ -6,7 +6,7 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="w-full h-screen text-center bg-gradient-to-l from-black to-teal-900"
+      className="w-full h-screen text-center bg-gradient-to-r from-black to-teal-900"
     >
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
