@@ -19,14 +19,14 @@ const Skills = () => {
             <div className="grid grid-cols-2 gap-4 justify-center items-center">
               <div className="m-auto">
                 <Image
-                  className="mt-8"
+                  className="mt-3"
                   src="/skills/api.png"
                   width={64}
                   height={64}
                   alt=""
                 />
               </div>
-              <div className="flex flex-col items-center mt-6">
+              <div className="flex flex-col items-center mt-4">
                 <p>REST API</p>
               </div>
             </div>
