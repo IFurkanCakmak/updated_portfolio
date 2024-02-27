@@ -101,7 +101,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href="https://izzetfurkancakmak.xyz"
+                    href="https://izzet-furkan-blog.vercel.app/"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
